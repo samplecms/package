@@ -1,0 +1,27 @@
+{
+    "name": "samplecms/package",
+    "type": "samplecms",
+    "description" : "samplecms",
+    "keywords": ["samplecms", "framework"],
+    "license": "MIT", 
+    "require": {
+        "php": ">=5.5.0",
+        "alexgarrett/violin": "^2.2",
+        "erusev/parsedown": "^1.6",
+        "symfony/yaml": "^3.0",
+        "pimple/pimple": "^3.0"
+        
+        
+    },
+    "autoload": {
+         "files":[
+            "./core/_function.php",
+            "./_function.php"
+        ],
+         "psr-4": {
+            "package\\": "./",
+            "core\\": "./core/"
+        } 
+    }
+
+}
